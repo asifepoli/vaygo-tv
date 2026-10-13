@@ -1,0 +1,11 @@
+ponto,anunciante,arte,segundos,inicio,fim,ativo
+sala,Teste 1,teste-1.png,8,2026-10-01,2026-12-31,sim
+sala,Teste 2,teste-2.png,8,2026-10-01,2026-12-31,sim
+quarto-casal,Teste 2,teste-2.png,8,2026-10-01,2026-12-31,sim
+quarto-casal,Teste 3,teste-3.png,8,2026-10-01,2026-12-31,sim
+quarto-filha,Teste 3,teste-3.png,8,2026-10-01,2026-12-31,sim
+quarto-filha,Teste 1,teste-1.png,8,2026-10-01,2026-12-31,sim
+todos,Aviso geral,teste-3.png,5,2026-10-01,2026-12-31,nao
+teste,Teste 1,teste-1.png,6,2026-10-01,2026-12-31,sim
+teste,Teste 2,teste-2.png,6,2026-10-01,2026-12-31,sim
+teste,Teste 3,teste-3.png,6,2026-10-01,2026-12-31,sim
