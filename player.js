@@ -1,4 +1,4 @@
-// VERSÃO: 2026-10-13-01 | player de artes para TV (ES5 de propósito, para rodar em navegadores antigos)
+// VERSÃO: 2026-10-13-02 | aceita o ponto definido pela própria página curta (sala, casal, filha)
 (function (root) {
   'use strict';
 
@@ -160,7 +160,7 @@
     return '';
   }
 
-  var PONTO = getParam('ponto') || 'teste';
+  var PONTO = getParam('ponto') || root.VAYGO_PONTO || 'teste';
   var DEBUG = getParam('debug') === '1';
 
   var state = {
