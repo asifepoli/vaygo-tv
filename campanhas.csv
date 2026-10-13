@@ -1,9 +1,9 @@
 ponto,anunciante,arte,segundos,inicio,fim,ativo,tipo
-todos,Supermercado da Maria,maria-supermercado.png,4,2026-10-13,2026-12-31,sim,Local da rede (permuta)
-todos,Academia de Ballet Talita Bessi,ballet-talita-bessi.png,4,2026-10-13,2026-12-31,sim,Local da rede (permuta)
-todos,Escola de Línguas FePoli,fepoli-linguas.png,4,2026-10-13,2026-12-31,sim,Local da rede (permuta)
-todos,VayGo Viagens,vaygo-viagens.png,4,2026-10-13,2026-12-31,sim,VayGo (fixa)
-todos,VayGo TV - Anuncie aqui,vaygo-tv-anuncie.png,4,2026-10-13,2026-12-31,sim,VayGo (fixa)
+todos,Supermercado da Maria,maria-supermercado.png,10,2026-10-13,2026-12-31,sim,Local da rede (permuta)
+todos,Academia de Ballet Talita Bessi,ballet-talita-bessi.png,10,2026-10-13,2026-12-31,sim,Local da rede (permuta)
+todos,Escola de Línguas FePoli,fepoli-linguas.png,10,2026-10-13,2026-12-31,sim,Local da rede (permuta)
+todos,VayGo Viagens,vaygo-viagens.png,10,2026-10-13,2026-12-31,sim,VayGo (fixa)
+todos,VayGo TV - Anuncie aqui,vaygo-tv-anuncie.png,10,2026-10-13,2026-12-31,sim,VayGo (fixa)
 teste,Teste 1,teste-1.png,6,2026-10-01,2026-12-31,sim,Página de teste
 teste,Teste 2,teste-2.png,6,2026-10-01,2026-12-31,sim,Página de teste
 teste,Teste 3,teste-3.png,6,2026-10-01,2026-12-31,sim,Página de teste
