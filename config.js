@@ -1,8 +1,8 @@
-// VERSÃO: 2026-10-13-01 | configuração do player (único arquivo que você pode precisar editar)
+// VERSÃO: 2026-10-21-01 | liga as TVs à aba Publicação da planilha (CSV publicado)
 window.VAYGO_CONFIG = {
-  // Endereço da aba "Campanhas" publicada como CSV no Google Sheets.
+  // Endereço da aba "Publicação" publicada como CSV no Google Sheets.
   // Deixe vazio ('') para usar o arquivo campanhas.csv deste repositório (modo teste).
-  SHEET_CSV_URL: '',
+  SHEET_CSV_URL: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSffPqVq9YEoZ9-RepWiBXYBZuBmKhJw4tUdLiT-SX-yG5v3XYI3echy4T2OKxn9fIFdvujkh8-3m1A/pub?gid=682768418&single=true&output=csv',
 
   // Arquivo de campanhas usado quando SHEET_CSV_URL está vazio
   LOCAL_CSV: 'campanhas.csv',

@@ -1,4 +1,4 @@
-// VERSÃO: 2026-10-13-02 | aceita o ponto definido pela própria página curta (sala, casal, filha)
+// VERSÃO: 2026-10-21-01 | se a planilha falhar e não houver lista na tela, usa o campanhas.csv do repositório como reserva
 (function (root) {
   'use strict';
 
@@ -207,13 +207,15 @@
     try { xhr.send(); } catch (e) { cb('erro ao enviar'); }
   }
 
-  function loadCampaigns() {
-    var url = SHEET_URL || LOCAL_CSV;
+  function loadCampaigns(useLocal) {
+    var url = useLocal ? LOCAL_CSV : (SHEET_URL || LOCAL_CSV);
     httpGet(url, function (err, text) {
       if (err) {
-        state.lastErr = 'planilha: ' + err;
+        state.lastErr = (useLocal ? 'reserva: ' : 'planilha: ') + err;
         renderDebug();
-        return; // mantém a lista anterior
+        // planilha falhou e ainda não há nada na tela: tenta o arquivo de reserva do repositório
+        if (!useLocal && SHEET_URL && state.list.length === 0) { loadCampaigns(true); }
+        return; // senão mantém a lista anterior
       }
       var list = selectCampaigns(rowsToObjects(parseCSV(text)), PONTO, todayNumber());
       state.lastErr = '';
@@ -281,7 +283,7 @@
   };
 
   loadCampaigns();
-  root.setInterval(loadCampaigns, REFRESH_MS);
+  root.setInterval(function () { loadCampaigns(); }, REFRESH_MS);
   root.setInterval(renderDebug, 1000);
   root.setTimeout(function () { root.location.reload(); }, RELOAD_MS);
 
