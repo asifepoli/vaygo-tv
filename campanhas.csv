@@ -1,6 +1,3 @@
 ponto,anunciante,arte,segundos,inicio,fim,ativo,tipo
-todos,Supermercado da Maria,maria-supermercado.png,10,2026-10-13,2026-12-31,sim,Local da rede (permuta)
-todos,Academia de Ballet Talita Bessi,ballet-talita-bessi.png,10,2026-10-13,2026-12-31,sim,Local da rede (permuta)
-todos,Escola de Línguas FePoli,fepoli-linguas.png,10,2026-10-13,2026-12-31,sim,Local da rede (permuta)
-todos,VayGo Viagens,vaygo-viagens.png,10,2026-10-13,2026-12-31,sim,VayGo (fixa)
-todos,VayGo TV - Anuncie aqui,vaygo-tv-anuncie.png,10,2026-10-13,2026-12-31,sim,VayGo (fixa)
+evento-bap,VayGo Viagens,vaygo-viagens.png,10,2026-10-13,2026-12-31,sim,VayGo (fixa)
+evento-bap,VayGo TV - Anuncie aqui,vaygo-tv-anuncie.png,10,2026-10-13,2026-12-31,sim,VayGo (fixa)
