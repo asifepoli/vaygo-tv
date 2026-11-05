@@ -1,4 +1,4 @@
-// VERSÃO: 2026-10-24-01 | mantém a tela acordada (vídeo mudo minúsculo em repetição, para o Fire TV não entrar em espera); resto igual à versão 2026-10-21-01
+// VERSÃO: 2026-11-05-01 | mostra a mensagem "Sem campanhas ativas" também na 1ª leitura vazia (antes ficava tela preta); mantém a tela acordada (vídeo mudo minúsculo em repetição, para o Fire TV não entrar em espera); resto igual à versão 2026-10-21-01
 (function (root) {
   'use strict';
 
@@ -169,6 +169,7 @@
     front: 0,
     timer: null,
     lastOk: '',
+    lida: false,
     lastErr: '',
     shown: ''
   };
@@ -220,7 +221,8 @@
       var list = selectCampaigns(rowsToObjects(parseCSV(text)), PONTO, todayNumber());
       state.lastErr = '';
       state.lastOk = nowText();
-      var changed = list.length !== state.list.length;
+      var changed = !state.lida || list.length !== state.list.length;
+      state.lida = true;
       if (!changed) {
         for (var i = 0; i < list.length; i++) {
           if (list[i].url !== state.list[i].url || list[i].seconds !== state.list[i].seconds) { changed = true; break; }
